@@ -1,9 +1,11 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const conta_1 = require("./conta");
-let numero1 = 10;
-let numero2 = 5;
-console.log(conta_1.Soma.calcular(numero1, numero2));
-console.log(conta_1.Subtrai.calcular(numero1, numero2));
-console.log(conta_1.Multiplica.calcular(numero1, numero2));
-console.log(conta_1.Divide.calcular(numero1, numero2));
+const calculadora_1 = __importDefault(require("./calculadora"));
+const calc = new calculadora_1.default();
+console.log(calc.calcular('soma', 10, 5));
+console.log(calc.calcular('subtrai', 10, 5));
+console.log(calc.calcular('multiplica', 10, 5));
+console.log(calc.calcular('divide', 10, 5));

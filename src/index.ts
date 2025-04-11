@@ -1,9 +1,8 @@
-import {Soma, Subtrai, Multiplica, Divide} from './conta'
+import Calculadora from './calculadora'
 
-let numero1: number = 10
-let numero2: number = 5
+const calc = new Calculadora()
 
-console.log(Soma.calcular(numero1, numero2))
-console.log(Subtrai.calcular(numero1, numero2))
-console.log(Multiplica.calcular(numero1, numero2))
-console.log(Divide.calcular(numero1, numero2))
+console.log(calc.calcular('soma', 10, 5))
+console.log(calc.calcular('subtrai', 10, 5))
+console.log(calc.calcular('multiplica', 10, 5))
+console.log(calc.calcular('divide', 10, 5))
